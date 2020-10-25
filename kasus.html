@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-4.5.2-dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css" />
+    <!-- aos anitmation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- datatables -->
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-4.5.2-dist/css/dataTables.bootstrap4.min.css"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/animate.css" />
+    <title>InfoCovid19</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <!-- nav desk -->
+    <nav class="navbar nav-desk navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Info<span>Covid19</span></a>
+        <button
+          class="navbar-toggler bg-danger navbar-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="kasus.html">Kasus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+          <label for=" theme-toggle-desk" class="mt-3 mr-2 label-theme"
+            >Mode gelap</label
+          >
+          <div class="switch mt-3 mr-5">
+            <input
+              id=" theme-toggle-desk"
+              type="checkbox"
+              class="switch-input theme-toggle"
+            />
+            <label for=" theme-toggle-desk" class="switch-label"></label>
+          </div>
+          <a href="#" class="btn-search mt-2"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav desk -->
+
+    <!-- nav mobile -->
+    <nav class="navbar nav-mobile">
+      <div class="container">
+        <a class="navbar-brand" href="#">Info<span>Covid19</span></a>
+        <button class="btn-search mt-2"><i class="fa fa-search"></i></button>
+      </div>
+    </nav>
+
+    <ul class="other-menu navbar-nav">
+      <div class="container">
+        <a class="navbar-brand mt-3" href="#">Info<span>Covid19</span></a>
+        <h5>InfoCovid19</h5>
+        <li class="nav-item ml-4">
+          <a href="/tentangkami.html" class="nav-link font-weight-lighter"
+            >Tentang Kami</a
+          >
+        </li>
+        <li class="nav-item ml-4">
+          <a href="/kebijakanprivasi.html" class="nav-link font-weight-lighter"
+            >Kebijakan Privasi</a
+          >
+        </li>
+        <h5>Setting</h5>
+        <label
+          for=" theme-toggle-mobile"
+          class="mt-3 mr-2 ml-4 label-theme font-weight-lighter"
+          >Mode gelap</label
+        >
+        <div class="switch">
+          <input
+            id="theme-toggle-mobile"
+            type="checkbox"
+            class="switch-input theme-toggle"
+          />
+          <label for="theme-toggle-mobile" class="switch-label">Switch</label>
+        </div>
+        <div class="col-3 mt-3 text-center icon-bottom-bar">
+          <a href="#" id="close-other-menu"
+            ><i class="fa fa-times-circle"></i>
+            <p>keluar</p></a
+          >
+        </div>
+      </div>
+    </ul>
+    <!--  end nav mobile -->
+    <!--end navigation -->
+    <!-- page kasus -->
+    <div class="page-kasus">
+      <!--case data -->
+      <section class="case mt-5">
+        <div class="container">
+          <h2 data-aos="fade-right">Kasus di Dunia Saat Ini</h2>
+          <div class="case-box" data-aos="zoom-in" data-aos-duration="1000">
+            <div
+              class="box box-confirmation"
+              data-aos="zoom-in"
+              data-aos-duration="2500"
+            >
+              <h4 class="title">Total Positif</h4>
+              <div class="">
+                <p class="number float-left" id="confirmed">----</p>
+                <p class="unit float-right">Orang</p>
+              </div>
+              <p class="source float-right">
+                Sumber data : Kementrian Kesehatan & JHU
+              </p>
+            </div>
+            <div
+              class="box box-recover"
+              data-aos="zoom-in"
+              data-aos-duration="2500"
+            >
+              <h4 class="title">Total Sembuh</h4>
+              <p class="number float-left" id="recovered">----</p>
+              <p class="unit float-right">Orang</p>
+              <p class="source float-right">
+                Sumber data : Kementrian Kesehatan & JHU
+              </p>
+            </div>
+            <div
+              class="box box-died"
+              data-aos="zoom-in"
+              data-aos-duration="2500"
+            >
+              <h4 class="title">Total Meninggal</h4>
+              <p class="number float-left" id="deaths">----</p>
+              <p class="unit float-right">Orang</p>
+              <p class="source float-right">
+                Sumber data : Kementrian Kesehatan & JHU
+              </p>
+            </div>
+            <div
+              class="box box-indonesia"
+              data-aos="zoom-in"
+              data-aos-duration="2500"
+            >
+              <h4 class="title">INDONESIA</h4>
+              <div class="case-indonesia">
+                <div class="positif">
+                  <span class="badge badge-pill badge-positif" id="id-confirmed"
+                    >----</span
+                  >
+                  Positif
+                </div>
+                <div class="recovery">
+                  <span
+                    class="badge badge-pill badge-recovery"
+                    id="id-recovered"
+                    >----</span
+                  >
+                  Sembuh
+                </div>
+                <div class="died">
+                  <span class="badge badge-pill badge-died" id="id-deaths"
+                    >----</span
+                  >
+                  Meninggal
+                </div>
+              </div>
+              <br />
+              <p class="source float-right">
+                Sumber data : Kementrian Kesehatan & JHU
+              </p>
+            </div>
+          </div>
+          <p
+            class="date mt-3"
+            class="box box-indonesia"
+            data-aos="fade"
+            data-aos-duration="2500"
+          >
+            Pembaruan terakhir :
+            <span id="last-update">----</span>
+          </p>
+          <div
+            class="card rounded-0 mt-5"
+            data-aos="zoom-in"
+            data-aos-duration="2500"
+          >
+            <div class="card-header">
+              <h3 class="card-title h6">
+                Peta Persebaran Covid-19 di Indonesia
+              </h3>
+            </div>
+            <div class="card-body">
+              <div class="map"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
+              <div class="box box-grafik mt-5">
+                <div class="card-header">
+                  <h3 class="card-title h6">
+                    Grafik Perkembangan Kasus Terkonfirmasi Positif Di Indonesia
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <canvas id="positifChart" width="500" height="250"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
+              <div class="box box-grafik mt-5">
+                <div class="card-header">
+                  <h3 class="card-title h6">
+                    Grafik Perkembangan Kasus Covid-19 Status Sembuh Di
+                    Indonesia
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <canvas id="recoveryChart" width="500" height="250"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
+              <div class="box box-grafik mt-5">
+                <div class="card-header">
+                  <h3 class="card-title h6">
+                    Grafik Perkembangan Kasus Covid-19 Status Meninggal Di
+                    Indonesia
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <canvas id="diedChart" width="500" height="250"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
+              <div class="box box-grafik mt-5">
+                <div class="card-header">
+                  <h3 class="card-title h6">
+                    Grafik Perkembangan Kasus Covid-19 (Gabungan) Di Indonesia
+                    <br /><br />
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <canvas id="gabungChart" width="500" height="250"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card shadow mb-4 mt-5 rounded-0"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <div class="card-header py-3">
+              <h3 class="h6 m-0 card-title">
+                Data Perkembangan Kasus Covid-19 Provinsi di Indonesia
+              </h3>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table
+                  class="table table-bordered table_case"
+                  id="table_case"
+                  width="100%"
+                  cellspacing="0"
+                >
+                  <thead>
+                    <tr>
+                      <th>No.</th>
+                      <th>Provinsi</th>
+                      <th class="text-center">Positif</th>
+                      <th class="text-center">Sembuh</th>
+                      <th class="text-center">Meninggal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>DKI Jakarta</td>
+                      <td class="text-center data-postitif">97217</td>
+                      <td class="text-center data-recovery">82085</td>
+                      <td class="text-center data-died">2089</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Jawa Timur</td>
+                      <td class="text-center data-postitif">49801</td>
+                      <td class="text-center data-recovery">43671</td>
+                      <td class="text-center data-died">3606</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Jawa Barat</td>
+                      <td class="text-center data-postitif">31907</td>
+                      <td class="text-center data-recovery">21371</td>
+                      <td class="text-center data-died">616</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Jawa Tengah</td>
+                      <td class="text-center data-postitif">30218</td>
+                      <td class="text-center data-recovery">24704</td>
+                      <td class="text-center data-died">1620</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Sulawesi Selatan</td>
+                      <td class="text-center data-postitif">17690</td>
+                      <td class="text-center data-recovery">15322</td>
+                      <td class="text-center data-died">445</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Riau</td>
+                      <td class="text-center data-postitif">12319</td>
+                      <td class="text-center data-recovery">8396</td>
+                      <td class="text-center data-died">279</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Kalimantan Timur</td>
+                      <td class="text-center data-postitif">12221</td>
+                      <td class="text-center data-recovery">9092</td>
+                      <td class="text-center data-died">445</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Sumatera Utara</td>
+                      <td class="text-center data-postitif">12212</td>
+                      <td class="text-center data-recovery">9894</td>
+                      <td class="text-center data-died">509</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Sumatera Barat</td>
+                      <td class="text-center data-postitif">11652</td>
+                      <td class="text-center data-recovery">6410</td>
+                      <td class="text-center data-died">210</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Kalimantan Selatan</td>
+                      <td class="text-center data-postitif">11508</td>
+                      <td class="text-center data-recovery">10153</td>
+                      <td class="text-center data-died">459</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>Bali</td>
+                      <td class="text-center data-postitif">11042</td>
+                      <td class="text-center data-recovery">9883</td>
+                      <td class="text-center data-died">353</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>Papua</td>
+                      <td class="text-center data-postitif">8368</td>
+                      <td class="text-center data-recovery">4533</td>
+                      <td class="text-center data-died">119</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>Banten</td>
+                      <td class="text-center data-postitif">8093</td>
+                      <td class="text-center data-recovery">6217</td>
+                      <td class="text-center data-died">240</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>Sumatera Selatan</td>
+                      <td class="text-center data-postitif">7328</td>
+                      <td class="text-center data-recovery">5522</td>
+                      <td class="text-center data-died">398</td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>Aceh</td>
+                      <td class="text-center data-postitif">6844</td>
+                      <td class="text-center data-recovery">5037</td>
+                      <td class="text-center data-died">238</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>Sulawesi Utara</td>
+                      <td class="text-center data-postitif">5075</td>
+                      <td class="text-center data-recovery">4258</td>
+                      <td class="text-center data-died">192</td>
+                    </tr>
+                    <tr>
+                      <td>17</td>
+                      <td>Sulawesi Tenggara</td>
+                      <td class="text-center data-postitif">4382</td>
+                      <td class="text-center data-recovery">2979</td>
+                      <td class="text-center data-died">73</td>
+                    </tr>
+                    <tr>
+                      <td>18</td>
+                      <td>Kalimantan Tengah</td>
+                      <td class="text-center data-postitif">4162</td>
+                      <td class="text-center data-recovery">3577</td>
+                      <td class="text-center data-died">145</td>
+                    </tr>
+                    <tr>
+                      <td>19</td>
+                      <td>Nusa Tenggara Barat</td>
+                      <td class="text-center data-postitif">3785</td>
+                      <td class="text-center data-recovery">3305</td>
+                      <td class="text-center data-died">214</td>
+                    </tr>
+                    <tr>
+                      <td>20</td>
+                      <td>Papua Barat</td>
+                      <td class="text-center data-postitif">3688</td>
+                      <td class="text-center data-recovery">2691</td>
+                      <td class="text-center data-died">57</td>
+                    </tr>
+                    <tr>
+                      <td>21</td>
+                      <td>Maluku</td>
+                      <td class="text-center data-postitif">3624</td>
+                      <td class="text-center data-recovery">2835</td>
+                      <td class="text-center data-died">44</td>
+                    </tr>
+                    <tr>
+                      <td>22</td>
+                      <td>Daerah Istimewa Yogyakarta</td>
+                      <td class="text-center data-postitif">3389</td>
+                      <td class="text-center data-recovery">2762</td>
+                      <td class="text-center data-died">88</td>
+                    </tr>
+                    <tr>
+                      <td>23</td>
+                      <td>Kepulauan Riau</td>
+                      <td class="text-center data-postitif">3012</td>
+                      <td class="text-center data-recovery">2361</td>
+                      <td class="text-center data-died">70</td>
+                    </tr>
+                    <tr>
+                      <td>24</td>
+                      <td>Gorontalo</td>
+                      <td class="text-center data-postitif">2972</td>
+                      <td class="text-center data-recovery">2802</td>
+                      <td class="text-center data-died">81</td>
+                    </tr>
+                    <tr>
+                      <td>25</td>
+                      <td>Maluku Utara</td>
+                      <td class="text-center data-postitif">2152</td>
+                      <td class="text-center data-recovery">1928</td>
+                      <td class="text-center data-died">74</td>
+                    </tr>
+                    <tr>
+                      <td>26</td>
+                      <td>Kalimantan Barat</td>
+                      <td class="text-center data-postitif">1451</td>
+                      <td class="text-center data-recovery">1255</td>
+                      <td class="text-center data-died">10</td>
+                    </tr>
+                    <tr>
+                      <td>27</td>
+                      <td>Lampung</td>
+                      <td class="text-center data-postitif">1420</td>
+                      <td class="text-center data-recovery">912</td>
+                      <td class="text-center data-died">54</td>
+                    </tr>
+                    <tr>
+                      <td>28</td>
+                      <td>Jambi</td>
+                      <td class="text-center data-postitif">1049</td>
+                      <td class="text-center data-recovery">379</td>
+                      <td class="text-center data-died">21</td>
+                    </tr>
+                    <tr>
+                      <td>29</td>
+                      <td>Sulawesi Barat</td>
+                      <td class="text-center data-postitif">971</td>
+                      <td class="text-center data-recovery">734</td>
+                      <td class="text-center data-died">12</td>
+                    </tr>
+                    <tr>
+                      <td>30</td>
+                      <td>Bengkulu</td>
+                      <td class="text-center data-postitif">917</td>
+                      <td class="text-center data-recovery">727</td>
+                      <td class="text-center data-died">45</td>
+                    </tr>
+                    <tr>
+                      <td>31</td>
+                      <td>Sulawesi Tengah</td>
+                      <td class="text-center data-postitif">762</td>
+                      <td class="text-center data-recovery">479</td>
+                      <td class="text-center data-died">30</td>
+                    </tr>
+                    <tr>
+                      <td>32</td>
+                      <td>Kalimantan Utara</td>
+                      <td class="text-center data-postitif">735</td>
+                      <td class="text-center data-recovery">628</td>
+                      <td class="text-center data-died">7</td>
+                    </tr>
+                    <tr>
+                      <td>33</td>
+                      <td>Nusa Tenggara Timur</td>
+                      <td class="text-center data-postitif">605</td>
+                      <td class="text-center data-recovery">416</td>
+                      <td class="text-center data-died">7</td>
+                    </tr>
+                    <tr>
+                      <td>34</td>
+                      <td>Kepulauan Bangka Belitung</td>
+                      <td class="text-center data-postitif">191</td>
+                      <td class="text-center data-recovery">173</td>
+                      <td class="text-center data-died">2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--case data -->
+    </div>
+    <!-- end page kasus -->
+    <!--footer -->
+    <footer>
+      <div class="container text-center">
+        <hr />
+        <a class="brand" href="#">Info<span>Covid19</span></a>
+        <ul class="menu">
+          <li class="list-menu">
+            <a href="">Beranda</a>
+            <a href="">Kasus</a>
+            <a href="">FAQ</a>
+            <a href=""></a>
+            <a href=""></a>
+          </li>
+          <li class="list-menu">
+            <a href="">Tentang Kami</a>
+            <a href="">Kebijakan Privasi</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright text-center">
+        Copyright &copy InfoCovid19 created by Madya Santosa
+      </div>
+    </footer>
+    <!--end footer -->
+
+    <!-- bottombar -->
+    <nav class="nav-mobile bottom-bar" style="position: fixed; bottom: 0">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 mt-3 text-center icon-bottom-bar">
+            <a href="index.html"
+              ><i class="fa fw fa-home"></i>
+              <p>Beranda</p></a
+            >
+          </div>
+          <div class="col-3 mt-3 text-center icon-bottom-bar">
+            <a href="kasus.html" class="active"
+              ><i class="fas fa-chart-line"></i>
+              <p>Kasus</p></a
+            >
+          </div>
+          <div class="col-3 mt-3 text-center icon-bottom-bar">
+            <a href="faq.html"
+              ><i class="fa fw fa-comment"></i>
+              <p>FAQ</p></a
+            >
+          </div>
+          <div class="col-3 mt-3 text-center icon-bottom-bar">
+            <a href="#" id="show-other-menu"
+              ><i class="fa fw fa-ellipsis-h"></i>
+              <p>Lainnya</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--end bottombar -->
+    <!-- script -->
+    <script src="vendor/jquery/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="vendor/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <!-- charrtJS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+      integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- datatables -->
+    <script src="vendor/jquery/jquery.dataTables.min.js"></script>
+    <script src="/vendor/bootstrap-4.5.2-dist/js/dataTables.bootstrap4.min.js"></script>
+    <!-- myscript -->
+    <script src="assets/scripts/chart.js"></script>
+    <script src="assets/scripts/animate.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/api.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#table_case").DataTable();
+      });
+    </script>
+  </body>
+</html>
