@@ -1,0 +1,204 @@
+svg#freepik_stories-fighting-against-coronavirus:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-fighting-against-coronavirus.animated
+  #freepik--Virus--inject-109 {
+  animation: 1s 1 forwards ease-in fadeIn, 3s Infinite linear floating;
+  animation-delay: 0s, 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.shadow-vector {
+  fill: var(--shadow);
+}
+svg#freepik_stories-virus:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-virus.animated #freepik--Tubes--inject-170 {
+  animation: 1.5s Infinite linear wind;
+  animation-delay: 0s;
+}
+svg#freepik_stories-virus.animated #freepik--Virus--inject-170 {
+  animation: 1s 1 forwards ease-in zoomIn, 1.5s Infinite linear wind;
+  animation-delay: 0s, 1s;
+}
+svg#freepik_stories-virus.animated #freepik--Character--inject-170 {
+  animation: 1.5s Infinite linear wind;
+  animation-delay: 0s;
+}
+@keyframes wind {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#freepik_stories-social-distancing:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-social-distancing.animated #freepik--Distance--inject-10 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn,
+    6s Infinite linear heartbeat;
+  animation-delay: 0s, 1.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+svg#freepik_stories-person-with-medical-mask:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-person-with-medical-mask.animated
+  #freepik--character-1--inject-9 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+svg#freepik_stories-person-with-medical-mask.animated
+  #freepik--character-2--inject-9 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+svg#freepik_stories-handwashing:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-handwashing.animated #freepik--Character--inject-16 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+svg#freepik_stories-ethnic-friendship:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-ethnic-friendship.animated
+  #freepik--character-4--inject-135 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+svg#freepik_stories-ethnic-friendship.animated
+  #freepik--character-1--inject-135 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+svg#freepik_stories-ethnic-friendship.animated
+  #freepik--character-2--inject-135 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+svg#freepik_stories-ethnic-friendship.animated
+  #freepik--character-3--inject-135 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+svg#freepik_stories-virus-transmission:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-virus-transmission.animated #freepik--Virus--inject-160 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+svg#freepik_stories-going-up:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-going-up.animated #freepik--Character--inject-75 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

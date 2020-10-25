@@ -1,0 +1,132 @@
+.page-kasus {
+  .case {
+    margin-bottom: 100px;
+    h2 {
+      color: var(--color-text);
+      margin-bottom: 30px;
+    }
+    .case-box {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      .box {
+        border: 0px solid var(--bg-nav);
+        color: #fff;
+        &.box-confirmation {
+          background-color: #ff0000;
+        }
+        &.box-indonesia {
+          background-color: silver;
+          .case-indonesia {
+            display: flex;
+
+            .badge {
+              padding: 5px 10px;
+              font-size: 14px;
+              margin-right: 5px;
+            }
+            .badge-positif {
+              background-color: #ff0000;
+            }
+            .badge-recovery {
+              background-color: #3cb201;
+            }
+            .badge-died {
+              background-color: #ffa500;
+            }
+            .source {
+              top: 120px;
+            }
+          }
+        }
+        &.box-recover {
+          background-color: #3bb001;
+        }
+        &.box-died {
+          background-color: orange;
+        }
+        .title {
+          font-weight: 600;
+          font-size: 0.875rem;
+        }
+        .number {
+          font-size: 24px;
+          font-weight: 400;
+          font-family: "Lato", sans-serif;
+        }
+        .unit {
+          font-size: 0.875rem;
+          line-height: 1.3rem;
+          margin-bottom: 0.5rem;
+          margin-top: 0.5rem;
+        }
+        .source {
+          font-size: 9px;
+          position: absolute;
+          top: 100px;
+          right: 10px;
+        }
+      }
+    }
+    .map {
+      width: 100%;
+      height: 400px;
+      background-image: url("../images/map.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .box-grafik {
+      background-color: #fff;
+      box-shadow: var(--box-shadow);
+      border: 0px solid;
+    }
+
+    .table_case {
+      tbody {
+        tr {
+          .data-postitif {
+            color: #ff0000;
+          }
+          .data-recovery {
+            color: #3bb001;
+          }
+          .data-died {
+            color: #ffa500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-kasus {
+    .case {
+      .case-box {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+    }
+    .map {
+      height: 500px !important;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .page-kasus {
+    .case {
+      .case-box {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .page-kasus {
+    .case {
+      .case-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
