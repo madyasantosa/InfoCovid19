@@ -1,7 +1,6 @@
 const confirmed = document.querySelector("#confirmed");
 const recovered = document.querySelector("#recovered");
 const deaths = document.querySelector("#deaths");
-confirmed.setAttribute("data-target", dataPositif);
 confirmed.setAttribute("data-target", "368842");
 recovered.setAttribute("data-target", "293653");
 deaths.setAttribute("data-target", "12734");
