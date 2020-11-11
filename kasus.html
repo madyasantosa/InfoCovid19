@@ -124,77 +124,47 @@
       <!--case data -->
       <section class="case mt-5">
         <div class="container">
-          <h2 data-aos="fade-right">Kasus di Dunia Saat Ini</h2>
-          <div class="case-box" data-aos="zoom-in" data-aos-duration="1000">
+          <h2 data-aos="fade-right">Kasus di Indonesia Saat Ini</h2>
+          <div class="case-box" data-aos="fade-in" data-aos-duration="1000">
             <div
               class="box box-confirmation"
-              data-aos="zoom-in"
+              data-aos="fade-in"
               data-aos-duration="2500"
             >
               <h4 class="title">Total Positif</h4>
               <div class="">
-                <p class="number float-left" id="confirmed">----</p>
+                <p class="number float-left counter" id="confirmed">0</p>
                 <p class="unit float-right">Orang</p>
               </div>
               <p class="source float-right">
-                Sumber data : Kementrian Kesehatan & JHU
+                Sumber data :
+                <span class="source-data">----</span>
               </p>
             </div>
             <div
               class="box box-recover"
-              data-aos="zoom-in"
+              data-aos="fade-in"
               data-aos-duration="2500"
             >
               <h4 class="title">Total Sembuh</h4>
-              <p class="number float-left" id="recovered">----</p>
+              <p class="number float-left counter" id="recovered">0</p>
               <p class="unit float-right">Orang</p>
               <p class="source float-right">
-                Sumber data : Kementrian Kesehatan & JHU
+                Sumber data :
+                <span class="source-data">----</span>
               </p>
             </div>
             <div
               class="box box-died"
-              data-aos="zoom-in"
+              data-aos="fade-in"
               data-aos-duration="2500"
             >
               <h4 class="title">Total Meninggal</h4>
-              <p class="number float-left" id="deaths">----</p>
+              <p class="number float-left counter" id="deaths">0</p>
               <p class="unit float-right">Orang</p>
               <p class="source float-right">
-                Sumber data : Kementrian Kesehatan & JHU
-              </p>
-            </div>
-            <div
-              class="box box-indonesia"
-              data-aos="zoom-in"
-              data-aos-duration="2500"
-            >
-              <h4 class="title">INDONESIA</h4>
-              <div class="case-indonesia">
-                <div class="positif">
-                  <span class="badge badge-pill badge-positif" id="id-confirmed"
-                    >----</span
-                  >
-                  Positif
-                </div>
-                <div class="recovery">
-                  <span
-                    class="badge badge-pill badge-recovery"
-                    id="id-recovered"
-                    >----</span
-                  >
-                  Sembuh
-                </div>
-                <div class="died">
-                  <span class="badge badge-pill badge-died" id="id-deaths"
-                    >----</span
-                  >
-                  Meninggal
-                </div>
-              </div>
-              <br />
-              <p class="source float-right">
-                Sumber data : Kementrian Kesehatan & JHU
+                Sumber data :
+                <span class="source-data">----</span>
               </p>
             </div>
           </div>
@@ -209,7 +179,7 @@
           </p>
           <div
             class="card rounded-0 mt-5"
-            data-aos="zoom-in"
+            data-aos="fade-in"
             data-aos-duration="2500"
           >
             <div class="card-header">
@@ -221,62 +191,21 @@
               <div class="map"></div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
-              <div class="box box-grafik mt-5">
-                <div class="card-header">
-                  <h3 class="card-title h6">
-                    Grafik Perkembangan Kasus Terkonfirmasi Positif Di Indonesia
-                  </h3>
-                </div>
-                <div class="card-body">
-                  <canvas id="positifChart" width="500" height="250"></canvas>
-                </div>
+          <div class="" data-aos="fade-in" data-aos-duration="1500">
+            <div class="box box-grafik mt-5">
+              <div class="card-header">
+                <h3 class="card-title h6">
+                  Grafik Perkembangan Kasus Terkonfirmasi Positif Di Indonesia
+                </h3>
               </div>
-            </div>
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
-              <div class="box box-grafik mt-5">
-                <div class="card-header">
-                  <h3 class="card-title h6">
-                    Grafik Perkembangan Kasus Covid-19 Status Sembuh Di
-                    Indonesia
-                  </h3>
-                </div>
-                <div class="card-body">
-                  <canvas id="recoveryChart" width="500" height="250"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
-              <div class="box box-grafik mt-5">
-                <div class="card-header">
-                  <h3 class="card-title h6">
-                    Grafik Perkembangan Kasus Covid-19 Status Meninggal Di
-                    Indonesia
-                  </h3>
-                </div>
-                <div class="card-body">
-                  <canvas id="diedChart" width="500" height="250"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
-              <div class="box box-grafik mt-5">
-                <div class="card-header">
-                  <h3 class="card-title h6">
-                    Grafik Perkembangan Kasus Covid-19 (Gabungan) Di Indonesia
-                    <br /><br />
-                  </h3>
-                </div>
-                <div class="card-body">
-                  <canvas id="gabungChart" width="500" height="250"></canvas>
-                </div>
+              <div class="card-body">
+                <canvas id="gabungChart" width="600" height="250"></canvas>
               </div>
             </div>
           </div>
           <div
             class="card shadow mb-4 mt-5 rounded-0"
-            data-aos="zoom-in"
+            data-aos="fade-in"
             data-aos-duration="1500"
           >
             <div class="card-header py-3">
@@ -294,7 +223,7 @@
                 >
                   <thead>
                     <tr>
-                      <th>No.</th>
+                      <th>FID</th>
                       <th>Provinsi</th>
                       <th class="text-center">Positif</th>
                       <th class="text-center">Sembuh</th>
@@ -557,20 +486,18 @@
         <a class="brand" href="#">Info<span>Covid19</span></a>
         <ul class="menu">
           <li class="list-menu">
-            <a href="">Beranda</a>
-            <a href="">Kasus</a>
-            <a href="">FAQ</a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="index.html">Beranda</a>
+            <a href="kasus.html">Kasus</a>
+            <a href="faq.html">FAQ</a>
           </li>
           <li class="list-menu">
-            <a href="">Tentang Kami</a>
-            <a href="">Kebijakan Privasi</a>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Kebijakan Privasi</a>
           </li>
         </ul>
       </div>
       <div class="copyright text-center">
-        Copyright &copy InfoCovid19 created by Madya Santosa
+        Copyright &copy InfoCovid19 | Madya Santosa
       </div>
     </footer>
     <!--end footer -->
@@ -625,12 +552,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- datatables -->
     <script src="vendor/jquery/jquery.dataTables.min.js"></script>
-    <script src="/vendor/bootstrap-4.5.2-dist/js/dataTables.bootstrap4.min.js"></script>
+    <script src="vendor/bootstrap-4.5.2-dist/js/dataTables.bootstrap4.min.js"></script>
     <!-- myscript -->
     <script src="assets/scripts/chart.js"></script>
     <script src="assets/scripts/animate.js"></script>
     <script src="assets/scripts/main.js"></script>
     <script src="assets/scripts/api.js"></script>
+    <script src="assets/scripts/dataProvinsi.js"></script>
     <script>
       $(document).ready(function () {
         $("#table_case").DataTable();

@@ -1,7 +1,9 @@
 Identitas
 Nama : I Made Ari Madya Santosa
 Sekolah : SMK Negeri 1 Bangli
-website :
+Email : madyas230@gmail.com
+Telepon : 085333751616
+website : https://info-covid19-gamma.vercel.app/
 
 ---
 
