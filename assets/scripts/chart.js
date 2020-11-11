@@ -46,63 +46,6 @@ var dataDied = {
   fill: "none",
   lineTension: 0.1,
 };
-var ctx = document.getElementById("positifChart").getContext("2d");
-var positifChart = new Chart(ctx, {
-  type: "line",
-  data: {
-    labels: ["16-10", "17-10", "18-10", "19-10", "20-10", "21-10", "22-10"],
-    datasets: [dataPositif],
-  },
-  options: {
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: false,
-          },
-        },
-      ],
-    },
-  },
-});
-var ctx = document.getElementById("recoveryChart").getContext("2d");
-var recoveryChart = new Chart(ctx, {
-  type: "line",
-  data: {
-    labels: ["16-10", "17-10", "18-10", "19-10", "20-10", "21-10", "22-10"],
-    datasets: [dataRecovery],
-  },
-  options: {
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: false,
-          },
-        },
-      ],
-    },
-  },
-});
-var ctx = document.getElementById("diedChart").getContext("2d");
-var diedChart = new Chart(ctx, {
-  type: "line",
-  data: {
-    labels: ["16-10", "17-10", "18-10", "19-10", "20-10", "21-10", "22-10"],
-    datasets: [dataDied],
-  },
-  options: {
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: false,
-          },
-        },
-      ],
-    },
-  },
-});
 var ctx = document.getElementById("gabungChart").getContext("2d");
 var gabungChart = new Chart(ctx, {
   type: "line",
